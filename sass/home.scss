@@ -1,0 +1,129 @@
+/* ------------------- reset -------------------*/
+
+@import "reset.scss";
+@import "mixin.scss";
+
+/* ------------------- Information -------------------*/
+
+.one-section .container .page-wrap .box-information{
+    @include flex (column, flex-start, flex-start, 9.2rem);
+    padding-top: 50px;
+    padding-left: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $body-bg-color;
+    @include size (50%, 100%);
+    @include responsive (956px) {
+        @include size (100%, 100%);
+        @include flex (column, center, top, 9.2rem);
+    }
+    @include responsive (600px) {
+        padding-right: 30px;
+    }
+    @include responsive (382px) {
+        padding-bottom: 100px;
+    }
+    img {
+        @include size (38.9rem, 9.4rem);
+    }
+    .box-form {
+        @include flex (column, flex-start, flex-start, 5rem);
+        @include responsive (956px) {
+            @include flex (column, center, top, 5rem);
+        }
+        .theme-form {
+            @include flex (column, flex-start, flex-start, 0.8rem);
+            h2 {
+                @include text (2.4rem, $title-color, 700);
+            }
+            h3 {
+                @include text (1.4rem, $text-color, 700);
+            }
+            p {
+                @include text (1.4rem, $text-color, 400);
+                line-height: 1.942rem;
+                @include size (570px, initial);
+            }
+        }
+        form {
+            @include flex (column, flex-start, flex-start, 0.8rem);
+            width: 100%;
+            label {
+                @include text (1.4rem, $form-color, 700);
+            }
+            .box-input {
+                width: 150%;
+                position: relative;
+                filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+                @include responsive (956px) {
+                    width: 100%
+                }
+                input {
+                    @include text (1.2rem, #6A6A6A, 400);
+                    padding: 17px 0 17px 15px;
+                    width: 100%;
+                    border: none;
+                }
+                button {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    @include size (52px, 100%);
+                    background-color: $bg-button-color;
+                    border: none;
+                    @include flex (row, center, center, initial);
+                    cursor: pointer;
+                    img {
+                        @include size (24px, auto);
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    @include size (5px, 100%);
+                    background-color: $title-color;
+                }
+            }
+        }
+        a {
+            @include flex (row, center, flex-start, 0.4rem);
+            p {
+                @include text (1.4rem, $bg-button-color, 700);
+            }
+            img {
+                @include size (24px, 24px);
+            }
+            &:hover {
+                animation: movie 1s infinite ease;
+                @keyframes movie {
+                    0% {
+                        gap: 0.4rem;
+                    }
+                    50% {
+                        gap: 0.8rem;
+                    }
+                    100% {
+                        gap: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------------- photo -------------------*/
+
+.box-image-main {
+    @include flex (row, flex-start, flex-end, initial);
+    @include size (100vw, 100vh);
+    overflow: hidden;
+    @include responsive (956px) {
+        display: none;
+    }
+    img {
+        height: 100vh;
+    }
+}

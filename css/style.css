@@ -1,0 +1,248 @@
+/* ------------------- reset -------------------*/
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121214;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+}
+.container .page-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2, input {
+  font-family: "Work Sans", sans-serif;
+}
+
+h3, p, label {
+  font-family: "League Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------- Information -------------------*/
+.one-section .container .page-wrap .box-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 9.2rem;
+  padding-top: 50px;
+  padding-left: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #121214;
+  width: 100%;
+  max-width: 50%;
+  height: 100%;
+  max-height: 100%;
+}
+@media (max-width: 956px) {
+  .one-section .container .page-wrap .box-information {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 9.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .one-section .container .page-wrap .box-information {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 382px) {
+  .one-section .container .page-wrap .box-information {
+    padding-bottom: 100px;
+  }
+}
+.one-section .container .page-wrap .box-information img {
+  width: 100%;
+  max-width: 38.9rem;
+  height: 100%;
+  max-height: 9.4rem;
+}
+.one-section .container .page-wrap .box-information .box-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5rem;
+}
+@media (max-width: 956px) {
+  .one-section .container .page-wrap .box-information .box-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+.one-section .container .page-wrap .box-information .box-form .theme-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.one-section .container .page-wrap .box-information .box-form .theme-form h2 {
+  font-size: 2.4rem;
+  color: #04D361;
+  font-weight: 700;
+}
+.one-section .container .page-wrap .box-information .box-form .theme-form h3 {
+  font-size: 1.4rem;
+  color: #E1E1E6;
+  font-weight: 700;
+}
+.one-section .container .page-wrap .box-information .box-form .theme-form p {
+  font-size: 1.4rem;
+  color: #E1E1E6;
+  font-weight: 400;
+  line-height: 1.942rem;
+  width: 100%;
+  max-width: 570px;
+  height: 100%;
+  max-height: initial;
+}
+.one-section .container .page-wrap .box-information .box-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+}
+.one-section .container .page-wrap .box-information .box-form form label {
+  font-size: 1.4rem;
+  color: #A8A8A8;
+  font-weight: 700;
+}
+.one-section .container .page-wrap .box-information .box-form form .box-input {
+  width: 150%;
+  position: relative;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+@media (max-width: 956px) {
+  .one-section .container .page-wrap .box-information .box-form form .box-input {
+    width: 100%;
+  }
+}
+.one-section .container .page-wrap .box-information .box-form form .box-input input {
+  font-size: 1.2rem;
+  color: #6A6A6A;
+  font-weight: 400;
+  padding: 17px 0 17px 15px;
+  width: 100%;
+  border: none;
+}
+.one-section .container .page-wrap .box-information .box-form form .box-input button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 52px;
+  height: 100%;
+  max-height: 100%;
+  background-color: #8257e5;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  cursor: pointer;
+}
+.one-section .container .page-wrap .box-information .box-form form .box-input button img {
+  width: 100%;
+  max-width: 24px;
+  height: 100%;
+  max-height: auto;
+}
+.one-section .container .page-wrap .box-information .box-form form .box-input::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 5px;
+  height: 100%;
+  max-height: 100%;
+  background-color: #04D361;
+}
+.one-section .container .page-wrap .box-information .box-form a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4rem;
+}
+.one-section .container .page-wrap .box-information .box-form a p {
+  font-size: 1.4rem;
+  color: #8257e5;
+  font-weight: 700;
+}
+.one-section .container .page-wrap .box-information .box-form a img {
+  width: 100%;
+  max-width: 24px;
+  height: 100%;
+  max-height: 24px;
+}
+.one-section .container .page-wrap .box-information .box-form a:hover {
+  animation: movie 1s infinite ease;
+}
+@keyframes movie {
+  0% {
+    gap: 0.4rem;
+  }
+  50% {
+    gap: 0.8rem;
+  }
+  100% {
+    gap: 0.4rem;
+  }
+}
+
+/* ------------------- photo -------------------*/
+.box-image-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: initial;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+@media (max-width: 956px) {
+  .box-image-main {
+    display: none;
+  }
+}
+.box-image-main img {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+@mixin flex ($direction, $alignItems, $justifyContent, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    gap: $gap;
+}
+
+@mixin size ($maxW, $maxH) {
+    width: 100%;
+    max-width: $maxW;
+    height: 100%;
+    max-height: $maxH;
+}
+
+@mixin grid ($gridColumn, $gridrow, $Gap) {
+    display: grid;
+    grid-template-columns: $gridColumn;
+    grid-template-rows: $gridrow;
+    gap: $Gap;
+}
+
+@mixin text ($size, $color, $weight){
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin responsive ($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
